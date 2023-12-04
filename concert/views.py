@@ -35,11 +35,11 @@ def index(request):
 
 
 def songs(request):
-    songs = req.get("SONGS_URL/song").json()
+    songs = req.get("SONGS_URL/song").json() #TODO: Change with URL mircroservices
     return render(request, "songs.html", {"songs": songs["songs"]})
 
 def photos(request):
-    photos = req.get("PHOTO_URL/picture").json()
+    photos = req.get("PHOTO_URL/picture").json() #TODO: Change with URL mircroservices
     return render(request, "photos.html", {"photos": photos})
 
 def login_view(request):
